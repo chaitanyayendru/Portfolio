@@ -72,6 +72,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
+
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
@@ -120,6 +121,20 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
+          <div>
+          <p className='text-white'>
+            Connect with me on{" "}
+            <a
+              href='https://www.linkedin.com/in/chaitanyayendru/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='underline'
+            >
+              LinkedIn
+            </a>
+            .
+          </p>
+        </div>
         </form>
       </motion.div>
 

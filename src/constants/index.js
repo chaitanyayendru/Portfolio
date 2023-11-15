@@ -1,28 +1,34 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+  csharp,
+  dotnet,
+  jenkins,
+  nodejs,
+  redux,
+  pytorch,
+  aws,
+  sqlserver,
+  logo,
+  backend,
+  creator,
+  mobile,
+  web,
+  github,
+  menu,
+  close,
+  docker,
+  git,
+  javascript,
+  mongodb,
+  reactjs,
+  typescript,
+  threejs,
+  deltaX,
+  carresale,
+  shop,
+  MovieInfoGuide,
+  f1,
+  f2,
+  f3
   } from "../assets";
   
   export const navLinks = [
@@ -61,20 +67,16 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "csharp",
+      icon: csharp,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "dotnet",
+      icon: dotnet,
     },
     {
       name: "JavaScript",
       icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
     },
     {
       name: "React JS",
@@ -85,8 +87,8 @@ import {
       icon: redux,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "Jenkins",
+      icon: jenkins,
     },
     {
       name: "Node JS",
@@ -97,16 +99,20 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "aws",
+      icon: aws,
+    },
+    {
+      name: "pytorch",
+      icon: pytorch,
+    },
+    {
+      name: "sqlserver",
+      icon: sqlserver,
     },
     {
       name: "docker",
@@ -116,83 +122,54 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+      "title": "Product Engineer",
+      "company_name": "DeltaX",
+      "icon": deltaX, // Placeholder for DeltaX icon
+      "iconBg": "#7F7F7F", // Placeholder for DeltaX icon background color
+      "date": "July 2020 - August 2023",
+      "points": [
+        "Collaborated in a team to create a user interface and backend application, providing clients access to marketing reports from various publishers like Facebook, Google, and Bing.",
+        "Integrated applications and developed multiple microservices, achieving accurate data summaries with an impressively low error percentage of 2.3%.",
+        "Enhanced 32 API endpoints for in-house APIs, resulting in a remarkable 30% improvement in data integration across multiple platforms for publishers and other dependent services."
+      ]
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+      "title": "Software Engineer Intern",
+      "company_name": "DeltaX",
+      "icon": deltaX, // Placeholder for DeltaX icon
+      "iconBg": "#7F7F7F", // Placeholder for DeltaX icon background color
+      "date": "January 2020 - June 2020",
+      "points": [
+        "Designed a functional digital marketing live campaign comparison tool with 137 metrics using EDA tools, interactive reporting, and dashboard elements, utilizing the .NET ecosystem.",
+        "Contributed to improved user engagement, resulting in a 3% increase in data-driven decision-making across the organization."
+      ]
+    }
   ];
   
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+        "Chaitanya's exceptional dedication and capabilities as a full-time Product Engineer in our Engineering Department have earned him well-deserved recognition. His contributions have consistently surpassed expectations, unveiling a deep-seated passion for system design and applied machine learning that adds a uniquely personal touch to our team's success.",
+      name: "Akshay Surve",
       designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      company: "DeltaX",
+      image: f1,
+    },
+    {
+      testimonial:
+        "Leading the budget center and campaign management team, I can attest to Chaitanya's exceptional skills as a Product Engineer at DeltaX. Their dedication in creating a seamless interface and enhancing data integration showcases not just technical prowess but a commitment to excellence that truly elevates our team.",
+      name: "Avi Dawra",
+      designation: "Principal product engineer",
+      company: "DeltaX",
+      image: f2,
+    },
+    {
+      testimonial:
+        "Chaitanya is an outstanding software developer with expertise in wireless communications and Bayesian estimation. His deep understanding of advanced statistical concepts, coupled with a meticulous approach to research and strong problem-solving skills, sets him apart.",
+      name: "Amrita Mishra",
+      designation: "Assistant Professor",
+      company: "IIIT Bangalore",
+      image: f3,
     },
   ];
   
@@ -200,10 +177,31 @@ import {
     {
       name: "Car Rent",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "This application is designed to provide insights into the factors influencing car resale prices and offers a prediction feature to estimate the resale value of a car based on various attributes.",
       tags: [
         {
-          name: "react",
+          name: "machine-learning",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "python",
+          color: "green-text-gradient",
+        },
+        {
+          name: "data analysis",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: carresale,
+      source_code_link: "https://github.com/chaitanyayendru/Car_Resale_Price_Estimator",
+    },
+    {
+      name: "ShopYourWish",
+      description:
+        "This project revolves around the world of products, employing a sophisticated event-driven architecture for seamless communication and scalability.",
+      tags: [
+        {
+          name: "dotnet",
           color: "blue-text-gradient",
         },
         {
@@ -211,54 +209,33 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "microservices",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: shop,
+      source_code_link: "https://github.com/chaitanyayendru/ShopYourWishPOC",
     },
     {
-      name: "Job IT",
+      name: "Movie Compass",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "The Movie WebApp Guide is a comprehensive platform providing detailed information on a wide range of movies. Seamlessly integrating React.js, Node.js, and MongoDB, it empowers users with an immersive movie exploration experience. From user authentication to advanced features like ratings and reviews.",
       tags: [
         {
-          name: "react",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "recommendation systems",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "api integration",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: MovieInfoGuide,
+      source_code_link: "https://github.com/chaitanyayendru/MovieRecommender",
     },
   ];
   

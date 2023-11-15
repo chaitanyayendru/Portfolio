@@ -7,30 +7,41 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
+
+import csharp from "./tech/csharp.png"
+import dotnet from "./tech/dotnet.png"
 import javascript from "./tech/javascript.png";
+import jenkins from "./tech/jenkins.png";
+import docker from "./tech/docker.png";
+import git from "./tech/git.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import pytorch from "./tech/pytorch.png";
+import aws from "./tech/aws.png";
+import sqlserver from "./tech/sqlserver.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import deltaX from "./company/deltaX.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import carresale from "./carresale.png";
+import shop from "./shop.png";
+import MovieInfoGuide from "./MovieInfoGuide.png";
+import f1 from "./feedback/AVS.jpg";
+import f2 from "./feedback/Avi.jpg";
+import f3 from "./feedback/AM.jpg";
 
 export {
+  csharp,
+  dotnet,
+  jenkins,
+  nodejs,
+  redux,
+  pytorch,
+  aws,
+  sqlserver,
   logo,
   backend,
   creator,
@@ -39,24 +50,18 @@ export {
   github,
   menu,
   close,
-  css,
   docker,
-  figma,
   git,
-  html,
   javascript,
   mongodb,
-  nodejs,
   reactjs,
-  redux,
-  tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  deltaX,
+  carresale,
+  shop,
+  MovieInfoGuide,
+  f1,
+  f2,
+  f3
 };
