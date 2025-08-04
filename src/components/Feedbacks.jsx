@@ -16,7 +16,7 @@ const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
+    className='bg-glass backdrop-blur-sm p-10 rounded-3xl xs:w-[320px] w-full border border-accent/20 hover:border-accent/40 transition-all duration-300'
   >
     <p className='text-white font-black text-[48px]'>"</p>
 
@@ -28,7 +28,7 @@ const FeedbackCard = ({
           <p className='text-white font-medium text-[16px]'>
             <span className='blue-text-gradient'>@</span> {name}
           </p>
-          <p className='mt-1 text-secondary text-[12px]'>
+          <p className='mt-1 text-white/70 text-[12px]'>
             {designation} of {company}
           </p>
         </div>
@@ -45,22 +45,25 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
-      <div
-        className={`bg-cyan-800 rounded-2xl ${styles.padding} min-h-[300px]`}
-      >
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
-        </motion.div>
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} text-center`}>
+          What others say
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Testimonials.
+        </h2>
+      </motion.div>
+
+      <div className='mt-20 bg-black-100 rounded-[20px]'>
+        <div className='bg-tertiary rounded-2xl min-h-[300px] p-6 flex justify-evenly items-center flex-col xl:flex-row gap-4'>
+          {testimonials.map((testimonial, index) => (
+            <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
+          ))}
+        </div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
-      </div>
-    </div>
+    </>
   );
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Feedbacks, "feedbacks");

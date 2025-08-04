@@ -41,6 +41,22 @@ import {
       title: "Work",
     },
     {
+      id: "projects",
+      title: "Projects",
+    },
+    {
+      id: "products",
+      title: "Products",
+    },
+    {
+      id: "academia",
+      title: "Academia",
+    },
+    {
+      id: "blog",
+      title: "Blog",
+    },
+    {
       id: "contact",
       title: "Contact",
     },

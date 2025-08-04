@@ -1,12 +1,26 @@
-import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
-import Hero from './Hero';
-import Navbar from './Navbar';
-import About from './About';
-import Tech from './Tech';
-import Experience from './Experience';
-import Works from './Works';
-import Feedbacks from './Feedbacks';
-import Contact from './Contact';
+import { BallCanvas, ComputersCanvas, EarthCanvas, StarsCanvas } from "./canvas";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import About from "./About";
+import Tech from "./Tech";
+import Experience from "./Experience";
+import Projects from "./Projects";
+import ProjectsPage from "./ProjectsPage";
+import Feedbacks from "./Feedbacks";
+import Contact from "./Contact";
+import Works from "./Works";
+import Products from "./Products";
+import ProductsPage from "./ProductsPage";
+import Academia from './Academia';
+import AcademiaPage from './AcademiaPage';
+import Blog from './Blog';
+import BlogPage from './BlogPage';
+import WorkPage from './WorkPage';
+import ContactPage from './ContactPage';
+import MatrixRain from './MatrixRain';
+import Unified3DScene from './Unified3DScene';
+import TechModel from './TechModel';
+import TechVisualization from './TechVisualization';
 
 export {
   Hero,
@@ -14,11 +28,25 @@ export {
   About,
   Tech,
   Experience,
-  Works,
+  Projects,
+  ProjectsPage,
   Feedbacks,
   Contact,
-  EarthCanvas, 
+  Works,
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
-}
+  EarthCanvas, 
+  StarsCanvas,
+  Products,
+  ProductsPage,
+  Academia,
+  AcademiaPage,
+  Blog,
+  BlogPage,
+  WorkPage,
+  ContactPage,
+  MatrixRain,
+  Unified3DScene,
+  TechModel,
+  TechVisualization
+};
