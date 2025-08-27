@@ -21,6 +21,7 @@ import MatrixRain from './MatrixRain';
 import Unified3DScene from './Unified3DScene';
 import TechModel from './TechModel';
 import TechVisualization from './TechVisualization';
+import Education from './Education';
 
 export {
   Hero,
@@ -48,5 +49,6 @@ export {
   MatrixRain,
   Unified3DScene,
   TechModel,
-  TechVisualization
+  TechVisualization,
+  Education
 };

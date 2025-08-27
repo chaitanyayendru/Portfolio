@@ -49,12 +49,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-[#00ff88]/80 text-[17px] max-w-3xl leading-[30px] drop-shadow-[0_0_3px_rgba(0,255,136,0.2)]'
       >
-        I'm a software product engineer with a strong passion for innovation 
-        and a solid foundation in machine learning. My expertise spans 
-        full-stack development, with a focus on the React and .NET ecosystems.
-        I specialize in creating intelligent, boundary-pushing solutions that 
-        enhance user experiences and drive business success through cutting-edge technology.
-        Let's work together to bring your ideas to life!
+        I'm a dynamic AI software developer with 5+ years of experience and a master's in computer science. 
+        Passionate about leveraging GenAI and cutting-edge technological stacks to optimize financial processes, 
+        manage risk, and drive impactful projects. My expertise spans full-stack development with Spring Boot, 
+        React, and Python, specializing in machine learning, microservices architecture, and cloud-native solutions. 
+        I've successfully delivered AI-powered applications, optimized system performance, and built scalable 
+        financial platforms that handle millions of operations. Let's collaborate to create innovative solutions 
+        that push the boundaries of what's possible!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

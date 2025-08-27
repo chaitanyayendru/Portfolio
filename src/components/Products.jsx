@@ -1,33 +1,7 @@
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { Link } from "react-router-dom";
-
-const products = [
-  {
-    name: "ML Model Optimizer",
-    description: "An automated machine learning pipeline that optimizes model performance and reduces training time by 40%.",
-    category: "Machine Learning",
-    status: "In Development",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop",
-    link: "#"
-  },
-  {
-    name: "Code Review Assistant",
-    description: "AI-powered tool that helps developers write better code reviews with automated suggestions and best practices.",
-    category: "Developer Tools",
-    status: "Beta",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop",
-    link: "#"
-  },
-  {
-    name: "Data Visualization Dashboard",
-    description: "Interactive dashboard for real-time data visualization with customizable charts and analytics.",
-    category: "Data Analytics",
-    status: "Live",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
-    link: "#"
-  }
-];
+import { products } from "../constants";
 
 const ProductCard = ({ index, name, description, category, status, image, link }) => {
   const getStatusColor = (status) => {

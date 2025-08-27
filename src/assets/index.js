@@ -24,11 +24,21 @@ import pytorch from "./tech/pytorch.png";
 import aws from "./tech/aws.png";
 import sqlserver from "./tech/sqlserver.png";
 
+// Company logos
 import deltaX from "./company/deltaX.png";
+import atlanticus from "./company/atlanticus.jpg";
+import redprint from "./company/redprintfit.png";
+import ubuffalo from "./company/suny UB.png";
+import meta from "./company/meta.png";
+import shopify from "./company/shopify.png";
+import starbucks from "./company/starbucks.png";
+import tesla from "./company/tesla.png";
 
 import carresale from "./carresale.png";
 import shop from "./shop.png";
+import tripguide from "./tripguide.png";
 import MovieInfoGuide from "./MovieInfoGuide.png";
+import Villain_3 from "./Villain_3.png";
 import f1 from "./feedback/AVS.jpg";
 import f2 from "./feedback/Avi.jpg";
 import f3 from "./feedback/AM.jpg";
@@ -58,9 +68,18 @@ export {
   typescript,
   threejs,
   deltaX,
+  atlanticus,
+  redprint,
+  ubuffalo,
+  meta,
+  shopify,
+  starbucks,
+  tesla,
   carresale,
   shop,
+  tripguide,
   MovieInfoGuide,
+  Villain_3,
   f1,
   f2,
   f3

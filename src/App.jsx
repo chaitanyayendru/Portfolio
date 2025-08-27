@@ -20,7 +20,8 @@ import {
   Blog,
   BlogPage,
   WorkPage,
-  ContactPage
+  ContactPage,
+  Education
 } from "./components";
 
 const HomePage = () => {
@@ -50,6 +51,7 @@ const HomePage = () => {
         <Hero />
       </div>
       <About />
+      <Education />
       <Experience />
       <Tech />
       <Works />

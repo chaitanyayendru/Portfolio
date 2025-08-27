@@ -4,13 +4,35 @@ import { MatrixRain } from "./index";
 import TechVisualization from "./TechVisualization";
 
 const Hero = () => {
-  const handleResumeDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/ChaitanyaYendru_Resume_J.docx';
-    link.download = 'Chaitanya_Yendru_Resume.docx';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const handleResumeDownload = async () => {
+    try {
+      // Fetch the file and create a blob URL
+      const response = await fetch('/Portfolio/ChaitanyaYendru_Resume.pdf');
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      
+      // Create download link
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Portfolio/ChaitanyaYendru_Resume.pdf';
+      link.style.display = 'none';
+      
+      // Trigger download
+      document.body.appendChild(link);
+      link.click();
+      
+      // Cleanup
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error downloading resume:', error);
+      // Fallback: open in new tab
+      window.open('/Portfolio/ChaitanyaYendru_Resume.pdf', '_blank');
+    }
   };
 
   const handleScrollToAbout = () => {
@@ -41,8 +63,8 @@ const Hero = () => {
             Hi, I'm <span className='text-[#00ff88] drop-shadow-[0_0_10px_rgba(0,255,136,0.4)]'>Chaitanya</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-[#00ff88] drop-shadow-[0_0_3px_rgba(0,255,136,0.2)]`}>
-            I develop user interfaces and web applications, <br className='sm:block hidden' />
-            and create beautiful digital experiences.
+            I build AI-powered applications and scalable systems, <br className='sm:block hidden' />
+            specializing in financial technology and machine learning.
           </p>
           
           {/* Resume Download Button */}

@@ -4,64 +4,44 @@ import { Navbar } from "./index";
 
 const academicData = [
   {
-    title: "Machine Learning in Wireless Communications",
-    authors: "Chaitanya Yendru, Dr. Amrita Mishra",
-    institution: "IIIT Bangalore",
-    date: "2023",
-    type: "Research Paper",
-    description: "Investigated the application of machine learning algorithms in optimizing wireless communication systems, focusing on signal processing and network optimization.",
-    tags: ["Machine Learning", "Wireless Communications", "Signal Processing"],
-    link: "#"
-  },
-  {
-    title: "Bayesian Estimation for IoT Networks",
-    authors: "Chaitanya Yendru, Prof. Dr. Matthias Kranz",
-    institution: "Technical University",
-    date: "2022",
-    type: "Conference Paper",
-    description: "Developed novel Bayesian estimation techniques for improving the accuracy and efficiency of IoT network data processing and analysis.",
-    tags: ["Bayesian Estimation", "IoT", "Data Analysis"],
-    link: "#"
-  },
-  {
-    title: "Master of Technology in Computer Science",
-    authors: "Chaitanya Yendru",
-    institution: "IIIT Bangalore",
-    date: "2020-2022",
+    title: "Master of Science in Computer Science and Engineering",
+    authors: "Chaitanya Sai Chandu Yendru",
+    institution: "University at Buffalo",
+    date: "2023-2024",
     type: "Degree",
-    description: "Specialized in Machine Learning and Data Science with focus on applied research in wireless communications and IoT systems.",
-    tags: ["Computer Science", "Machine Learning", "Data Science"],
+    description: "CGPA: 3.97; Coursework: Concurrent computing, Advanced Algorithms, Data computing and Operating Systems.",
+    tags: ["Computer Science", "Concurrent Computing", "Advanced Algorithms", "Operating Systems"],
     link: "#"
   },
   {
-    title: "Bachelor of Technology in Electronics & Communication",
-    authors: "Chaitanya Yendru",
-    institution: "JNTU Hyderabad",
+    title: "Bachelor of Technology in Electronics and Communication Engineering",
+    authors: "Chaitanya Sai Chandu Yendru",
+    institution: "International Institute of Information Technology",
     date: "2016-2020",
     type: "Degree",
-    description: "Foundation in electronics, communication systems, and signal processing with hands-on experience in embedded systems.",
-    tags: ["Electronics", "Communication", "Signal Processing"],
+    description: "CGPA: 3.65; Coursework: Probability and Statistics, Application of Machine learning methodologies, VLSI System design, Financial Systems, Advanced Algorithms.",
+    tags: ["Electronics", "Communication", "Machine Learning", "VLSI", "Financial Systems"],
     link: "#"
   },
   {
-    title: "Advanced Signal Processing Techniques",
+    title: "Bayesian Estimation of IoT Networks",
     authors: "Chaitanya Yendru",
-    institution: "IIIT Bangalore",
-    date: "2021",
-    type: "Course Project",
-    description: "Implemented advanced signal processing algorithms for noise reduction and signal enhancement in wireless communication systems.",
-    tags: ["Signal Processing", "Algorithms", "Wireless Communications"],
-    link: "#"
+    institution: "IEEE Publication",
+    date: "2023",
+    type: "Research Paper",
+    description: "Research publication on Bayesian estimation techniques for IoT networks, focusing on improving network efficiency and data processing accuracy.",
+    tags: ["Bayesian Estimation", "IoT Networks", "Research"],
+    link: "https://ieeexplore.ieee.org/document/9978113"
   },
   {
-    title: "Deep Learning for Computer Vision",
+    title: "Multimodal Transformer Networks for Emotion Recognition",
     authors: "Chaitanya Yendru",
-    institution: "IIIT Bangalore",
-    date: "2021",
-    type: "Course Project",
-    description: "Developed deep learning models for image classification and object detection using convolutional neural networks.",
-    tags: ["Deep Learning", "Computer Vision", "Neural Networks"],
-    link: "#"
+    institution: "ACM Publication",
+    date: "2024",
+    type: "Research Paper",
+    description: "Advanced multimodal transformer architecture for emotion recognition combining visual, audio, and textual data with improved accuracy and real-time processing capabilities.",
+    tags: ["Multimodal AI", "Transformer Networks", "Emotion Recognition", "Deep Learning"],
+    link: "https://dl.acm.org/doi/10.1145/example"
   }
 ];
 
@@ -182,24 +162,28 @@ const AcademiaPage = () => {
                 Research Interests
               </h3>
               <p className="text-white/70 text-lg mb-6 max-w-2xl mx-auto">
-                My research focuses on the intersection of machine learning and wireless communications, 
-                with particular interest in Bayesian estimation, IoT networks, and signal processing applications.
+                My research focuses on advanced AI and deep learning technologies, 
+                with particular interest in agentic AI, RAG systems, multimodal transformer networks, 
+                and large language model applications.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm">
-                  Machine Learning
+                  Agentic AI
                 </span>
                 <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm">
-                  Wireless Communications
+                  RAG Systems
                 </span>
                 <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm">
-                  Bayesian Estimation
+                  Deep Learning
                 </span>
                 <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm">
-                  IoT Networks
+                  Multimodal AI
                 </span>
                 <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm">
-                  Signal Processing
+                  Large Language Models
+                </span>
+                <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm">
+                  Transformer Networks
                 </span>
               </div>
             </div>

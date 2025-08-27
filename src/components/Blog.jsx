@@ -1,44 +1,86 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const blogPosts = [
+const technicalBlogs = [
   {
-    title: "The Future of Machine Learning in Product Development",
-    excerpt: "Exploring how ML is transforming the way we build and iterate on software products, from automated testing to intelligent user experience optimization.",
-    category: "Machine Learning",
+    title: "Optimizing React Performance",
+    excerpt: "Lessons Learned from the Frontlines of Modern Web Development - Practical techniques and best practices for improving React application performance.",
+    category: "Technical",
     date: "Dec 15, 2023",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop",
-    link: "#"
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=250&fit=crop",
+    link: "https://medium.com/@chaitanyayendru/optimizing-react-performance-3a7159b6d44e"
   },
   {
-    title: "Building Scalable Microservices with .NET",
-    excerpt: "A deep dive into designing and implementing microservices architecture using .NET Core, with real-world examples from my experience at DeltaX.",
-    category: "Backend Development",
+    title: "The Future of Machine Learning in Product Development (2020–2025 and Beyond)",
+    excerpt: "Exploring how ML is transforming the way we build and iterate on software products, from automated testing to intelligent user experience optimization.",
+    category: "Technical",
     date: "Nov 28, 2023",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop",
-    link: "#"
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop",
+    link: "https://medium.com/@chaitanyayendru/the-future-of-machine-learning-in-product-development-2020-2025-and-beyond-80dee1bf7e90"
   },
   {
-    title: "Optimizing React Performance: Lessons Learned",
-    excerpt: "Practical techniques and best practices for improving React application performance, including code splitting, memoization, and bundle optimization.",
-    category: "Frontend Development",
+    title: "Navigating the Data Jungle: B+ Trees, LSM Trees, and Bw-Trees in Payments and Financial Systems",
+    excerpt: "A deep dive into advanced data structures and their applications in financial systems, exploring performance optimization and scalability.",
+    category: "Technical",
     date: "Nov 10, 2023",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=250&fit=crop",
-    link: "#"
-  },
-  {
-    title: "Bayesian Estimation in IoT: A Practical Guide",
-    excerpt: "How Bayesian estimation techniques can improve the accuracy and efficiency of IoT network data processing and analysis.",
-    category: "Research",
-    date: "Oct 22, 2023",
     readTime: "10 min read",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
-    link: "#"
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop",
+    link: "https://medium.com/@chaitanyayendru/navigating-the-data-jungle-b-trees-lsm-trees-and-bw-trees-in-payments-and-financial-systems-e71a1bf79216"
   }
 ];
+
+const personalBlogs = [
+  {
+    title: "Golden Repair",
+    excerpt: "A personal reflection on growth, resilience, and the beauty of imperfection in our journey through life and technology.",
+    category: "Personal",
+    date: "Oct 22, 2023",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
+    link: "https://medium.com/@chaitanyayendru/golden-repair-15c7fede91fd"
+  },
+  {
+    title: "Vessels in the Void",
+    excerpt: "Exploring the spaces between creation and destruction, finding meaning in the emptiness that surrounds us.",
+    category: "Personal",
+    date: "Oct 15, 2023",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
+    link: "https://medium.com/@chaitanyayendru/vessels-in-the-void-8b3a51feaca9"
+  },
+  {
+    title: "The Choir of Gleefulness",
+    excerpt: "A celebration of joy and the collective spirit that emerges when we come together in harmony.",
+    category: "Personal",
+    date: "Oct 8, 2023",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
+    link: "https://medium.com/@chaitanyayendru/the-choir-of-gleefulness-3d1aecb5e5f3"
+  },
+  {
+    title: "The Facade of Desire",
+    excerpt: "Examining the masks we wear and the true desires that lie beneath our carefully constructed exteriors.",
+    category: "Personal",
+    date: "Oct 1, 2023",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
+    link: "https://medium.com/@chaitanyayendru/the-facade-of-desire-cb3c76f7344f"
+  },
+  {
+    title: "Fresh Dew on This Chaotic Splendor",
+    excerpt: "Finding moments of peace and clarity amidst the chaos of modern life and technological advancement.",
+    category: "Personal",
+    date: "Sep 24, 2023",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
+    link: "https://medium.com/@chaitanyayendru/fresh-dew-on-this-chaotic-splendor-a-fleeting-stillness-amidst-the-storm-a-gentle-offering-of-a3918fffb047"
+  }
+];
+
+// Combine for display on main page (2 technical + 2 personal)
+const blogPosts = [...technicalBlogs.slice(0, 2), ...personalBlogs.slice(0, 2)];
 
 const BlogCard = ({ index, title, excerpt, category, date, readTime, image, link }) => {
   return (

@@ -2,61 +2,21 @@ import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { Link } from "react-router-dom";
 import { Navbar } from "./index";
+import { products } from "../constants";
 
-const products = [
+// Add features for each product
+const productsWithFeatures = [
   {
-    name: "ML Model Optimizer",
-    description: "An automated machine learning pipeline that optimizes model performance and reduces training time by 40%. Features include hyperparameter tuning, model selection, and automated deployment.",
-    category: "Machine Learning",
-    status: "In Development",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop",
-    link: "#",
-    features: ["AutoML", "Hyperparameter Tuning", "Model Deployment", "Performance Monitoring"]
+    ...products[0],
+    features: ["4 Projection Methods", "3 Optimization Strategies", "ML-powered Insights", "Real-time Dashboards", "React Frontend", "Flask Backend", "PostgreSQL", "Docker Deployment"]
   },
   {
-    name: "Code Review Assistant",
-    description: "AI-powered tool that helps developers write better code reviews with automated suggestions and best practices. Integrates with popular IDEs and version control systems.",
-    category: "Developer Tools",
-    status: "Beta",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop",
-    link: "#",
-    features: ["AI Suggestions", "IDE Integration", "Best Practices", "Code Quality"]
+    ...products[1],
+    features: ["6 AI Agents", "Financial Analysis", "Payment Processing", "Fraud Detection", "Portfolio Management", "Risk Assessment", "Compliance", "25+ Dependencies"]
   },
   {
-    name: "Data Visualization Dashboard",
-    description: "Interactive dashboard for real-time data visualization with customizable charts and analytics. Supports multiple data sources and real-time updates.",
-    category: "Data Analytics",
-    status: "Live",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
-    link: "#",
-    features: ["Real-time Data", "Custom Charts", "Multiple Sources", "Export Options"]
-  },
-  {
-    name: "API Gateway Manager",
-    description: "Centralized API management platform with authentication, rate limiting, and monitoring capabilities for microservices architecture.",
-    category: "Backend Services",
-    status: "Live",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop",
-    link: "#",
-    features: ["Authentication", "Rate Limiting", "Monitoring", "Documentation"]
-  },
-  {
-    name: "Cloud Cost Optimizer",
-    description: "Intelligent tool that analyzes cloud infrastructure costs and provides recommendations for optimization and cost reduction.",
-    category: "DevOps",
-    status: "In Development",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop",
-    link: "#",
-    features: ["Cost Analysis", "Optimization Tips", "Resource Monitoring", "Budget Alerts"]
-  },
-  {
-    name: "Security Scanner",
-    description: "Automated security scanning tool that identifies vulnerabilities in code, dependencies, and infrastructure configurations.",
-    category: "Security",
-    status: "Beta",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
-    link: "#",
-    features: ["Vulnerability Detection", "Dependency Scanning", "Infrastructure Security", "Compliance Reports"]
+    ...products[2],
+    features: ["100k+ ops/sec", "Sub-millisecond Latency", "Dual Protocols", "Real-time Monitoring", "Fraud Detection", "Market Data Caching", "Go Language", "Docker Deployment"]
   }
 ];
 
@@ -168,7 +128,7 @@ const ProductsPage = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.map((product, index) => (
+            {productsWithFeatures.map((product, index) => (
               <ProductCard key={`product-${index}`} index={index} {...product} />
             ))}
           </div>

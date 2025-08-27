@@ -118,7 +118,7 @@ const ExperienceCard = ({ experience, index }) => {
                 <div className="mt-6 pt-4 border-t border-accent/10">
                   <h4 className="text-accent font-semibold text-sm mb-3">Technologies & Skills</h4>
                   <div className="flex flex-wrap gap-2">
-                    {['React', 'Node.js', '.NET', 'MongoDB', 'AWS', 'Docker'].map((tech, techIndex) => (
+                    {experience.skills?.map((tech, techIndex) => (
                       <motion.span
                         key={techIndex}
                         initial={{ opacity: 0, scale: 0.8 }}
